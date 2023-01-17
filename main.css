@@ -3,10 +3,6 @@ body{
 	background-color:hsl(15, 60%, 60%);
 }
 
-div{
-	
-}
-
 div.cabecera{
 	display:block;
 }
@@ -26,7 +22,7 @@ div.textocab{
 	text-align:right;
 }
 
-div.desplegable{
+div.dropdown{
 	display:flex;
 	height:50px;
 	font-size:20px;
