@@ -3,12 +3,12 @@ body{
 	background-color:hsl(15, 60%, 60%);
 }
 
-div.cabecera{
+div.header{
 	display:block;
 }
 
 div.titulo{
-	height:150px;
+	height:100px;
 	text-align:center;
 	background-color:hsl(15, 80%, 80%);
 	font-size:90px;
