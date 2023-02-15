@@ -1,16 +1,16 @@
 head,
 body {
 	all: unset;
+	background-color: #01172B;
 }
 
 .cabecera {
 	height: 75px;
-	background-color: thistle;
+	color: rgb(220, 220, 150);
 }
 
 .sidebarbutton {
-	height: 100%;
-	padding-left: 10px;
+	padding-left: 30px;
 	width: 5%;
 	display: inline-block;
 }
@@ -21,7 +21,6 @@ body {
 	width: 75%;
 	height: 100%;
 }
-
 
 .socials {
 	display: inline-block;
@@ -46,16 +45,17 @@ body {
 
 div.navBar {
 	flex: 25%;
-	background-color: hsl(15, 60%, 60%);
-	border: 3px solid hsl(15, 60%, 40%);
+	background-color: rgb(0, 163, 163);
+	border: 3px solid #01172B;
 	padding-top: 10px;
 	padding-left: 7px;
 	border-radius: 6px;
 	z-index: 10;
+	font-size: 22px;
 }
 
 div.navBar:hover {
-	background-color: hsl(15, 60%, 20%);
+	background-color: rgba(0, 150, 150, 100);
 	color: hsl(15, 60%, 90%);
 }
 
@@ -67,19 +67,26 @@ div.navBar:hover>b {
 	display: block;
 }
 
-div.dropdown {
-	display: flex;
-	height: 50px;
-	font-size: 20px;
-	border: 3px solid hsl(15, 60%, 40%);
-	background-color: hsl(15, 60%, 40%);
-}
-
 b {
 	color: hsl(15, 60%, 90%);
 	background-color: hsl(0, 0%, 50%);
 	border: 2px solid black;
+	padding: 2px;
+	padding-left: 5px;
 }
+
+div.dropdown {
+	display: flex;
+	height: 50px;
+}
+
+.dropdowntitle {
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+}
+
+
 
 b:hover {
 	background-color: white;
@@ -91,8 +98,7 @@ b:hover {
 	display: flex;
 }
 
-.media1 {
-	background-color: rgb(180, 180, 25);
+.leftsidemenu {
 	flex: 20%;
 }
 
@@ -123,46 +129,38 @@ b:hover {
 	overflow: auto;
 	/*::-webkit-scrollbar {	(enter) display: none; (enter) } */
 	scrollbar-width: none;
-
-
-
 }
 
 .sticky1 {
 	background-color: white;
 	display: block;
 	position: sticky;
-	top: 0px;
-	font-size: 100px;
+	font-size: 60px;
+	font-weight: bolder;
 
 }
 
 .tex1 {
+	padding: 3px;
 	display: block;
 	font-size: 15px;
 	color: white;
-
-
-
+	margin-top: 10px;
 }
 
-.media3 {
-	background-color: rgb(180, 180, 25);
+.rightsidemenu {
 	flex: 12%;
-
+	text-align: center;
 }
 
 div.bajo {
 	display: flex;
-	bottom: 0;
-
 }
 
-.tabla1 {
+.tabla {
 	flex: 25%;
-	height: 300px;
-
-	background-color: rgb(180, 180, 25);
+	background-color: rgba(0, 150, 150, 100);
+	padding-bottom: 10px;
 }
 
 .texto {
@@ -174,24 +172,19 @@ div.bajo {
 }
 
 .tformulario {
+	margin-left: 20%;
+	width: 60%;
+	background-color: rgba(180, 180, 25, 100);
 	text-align: center;
 	font-size: 20px;
 }
 
-.D {
-	background-color: rgb(180, 180, 25);
+.labelform {
 	border: 5px solid rgb(180, 180, 25);
-	border-radius: 10px;
 	margin: 5px;
-
-}
-
-.E {
+	border-radius: 10px;
 	background-color: rgb(180, 180, 25);
-	border: 5px solid rgb(180, 180, 25);
-	border-radius: 10px;
-	margin: 5px;
-
+	padding-left: 3px;
 }
 
 .T {
@@ -222,10 +215,6 @@ div.bajo {
 	flex: 20%;
 }
 
-.a3 {
-	flex: 5%;
-}
-
 textarea {
 	margin-left: 30px;
 	margin-right: 10px;
@@ -235,18 +224,17 @@ textarea {
 	flex: 90%;
 }
 
-input.boton2 {
-	background-color: hsl(40, 40%, 350%);
+input.buttonsend {
 	padding: 20px;
 	text-align: center;
 	background-color: hsl(40, 40%, 350%);
 	border: rgb(180, 100, 25);
 	border-radius: 10px;
 	font-size: 30px;
-	width: 100%
+	width: 80%
 }
 
-input.boton2:active {
+input.buttonsend:active {
 	padding: 20px;
 	text-align: center;
 	background-color: hsl(40, 40%, 350%);
@@ -255,13 +243,26 @@ input.boton2:active {
 	font-size: 30px;
 	color: black;
 	background-color: rgb(180, 180, 25);
-
-
-
 }
 
-.b1 {
+input {
 	width: 95%;
+}
+
+.navBarGoInicio {
+	flex: 25%;
+	border: 3px solid #01172B;
+	padding-top: 10px;
+	padding-left: 7px;
+	border-radius: 6px;
+	z-index: 10;
+	font-size: 22px;
+	background-color: rgb(180, 150, 25);
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -278,4 +279,9 @@ input.boton2:active {
 	div.bajo div ul {
 		font-size: 85%;
 	}
+
+	div.dropdown {
+		height: 70px;
+	}
+
 }
